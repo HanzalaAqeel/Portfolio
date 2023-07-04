@@ -18,6 +18,11 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+/* a:active {
+  color: #ffd770;
+  border-bottom: 4px solid;
+} */
 section {
   height: 100vh;
 }
@@ -70,6 +75,10 @@ ul .li1:hover a,
 }
 
 @media only screen and (min-width: 730px) {
+  a.active_ {
+    color: #ffd770;
+    border-bottom: 4px solid;
+  }
   ul {
     height: 70px;
     width: 100%;
@@ -81,6 +90,9 @@ ul .li1:hover a,
   }
 }
 @media only screen and (max-width: 730px) {
+  a.active_ {
+    color: #ffd770;
+  }
   a {
     font-size: 16px;
   }
