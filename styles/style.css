@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background: #18b6c4; */
+  font-family: Poppins, sans-serif;
+}
+li {
+  list-style-type: none;
+  padding: 10px 10px 15px 10px;
+  width: 100px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+section {
+  height: 100vh;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+#home {
+  background: #18b6c4;
+}
+#about {
+  background: #d21616;
+}
+#service {
+  background-color: #00f;
+}
+#contact {
+  background-color: #0f0;
+}
+header nav {
+  width: 100vw;
+  position: fixed;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+}
+nav .items {
+  width: 500px;
+  /* align-self: flex-end; */
+}
+nav .items ul {
+  padding: 0%;
+  /* height: 70px; */
+  /* align-items: center; */
+}
+.items img {
+  display: none;
+}
+ul .li1:hover a,
+.li2:hover a,
+.li3:hover a,
+.li4:hover a {
+  color: #ffd770;
+  /* color: linear-gradient(90deg, #ae8625, #f7ef8a, #d2ac47, #edc967); */
+  border-bottom: 4px solid;
+}
+
+@media only screen and (min-width: 730px) {
+  ul {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    padding-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  a {
+    font-size: 16px;
+  }
+  ul li {
+    align-self: center;
+  }
+
+  ul {
+    background: rgb(0, 0, 0, 0.9);
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 150px;
+    height: 250px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    animation: example 0.5s ease-in-out 1;
+  }
+  ul.active {
+    display: flex;
+  }
+  @keyframes example {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 250px;
+    }
+  }
+  div.items {
+    width: 48px;
+  }
+  .items img {
+    display: inline;
+    margin: 0px;
+  }
+  ul .li1:hover a,
+  .li2:hover a,
+  .li3:hover a,
+  .li4:hover a {
+    border: none;
+  }
+}
